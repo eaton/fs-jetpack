@@ -221,6 +221,22 @@ export interface FSJetpack {
   dirAsync(path: string, criteria?: DirCriteria): Promise<FSJetpack>;
 
   /**
+   * Download a URL's body data to a local file.
+   *
+   * @param path filename to save URL data
+   * @param url url to download
+   */
+  download(path: string, url: string | URL | Request): void
+
+  /**
+   * Asycnhronously download a URL's body data to a local file.
+   *
+   * @param path filename to save URL data
+   * @param url url to download
+   */
+  downloadAsync(path: string, url: string | URL | Request): Promise<void>
+
+  /**
    * Checks whether something exists on given `path`. This method returns values more specific than `true/false` to
    * protect from errors like "I was expecting directory, but it was a file".
    *
