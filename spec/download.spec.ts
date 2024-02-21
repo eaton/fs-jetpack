@@ -10,10 +10,12 @@ describe("downloads a remote file", () => {
   afterEach(helper.switchBackToCorrectCwd);
 
   it("async", (done) => {
-    jetpack.downloadAsync('async.html', 'https://example.com/index.html')
+    jetpack.downloadAsync('async.html', 'https://example.com')
       .then(() => {
-        expect(jetpack.exists("async.html")).to.equal(true);
-        done();
-      });
+        jetpack.existsAsync("async.html").then((exists: unknown) => {
+          expect(exists).to.equal('file');
+          done();
+        });
+      }).catch(done)
     });
 });
