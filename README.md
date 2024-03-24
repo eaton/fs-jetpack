@@ -1,6 +1,13 @@
-# fs-jetpack [![codecov](https://codecov.io/gh/szwacz/fs-jetpack/branch/master/graph/badge.svg)](https://codecov.io/gh/szwacz/fs-jetpack)
+# fs-jetpack [![codecov](https://codecov.io/gh/eaton/fs-jetpack/branch/master/graph/badge.svg)](https://codecov.io/gh/eaton/fs-jetpack)
 
 API for your everyday file system manipulations, much more convenient than [fs](http://nodejs.org/api/fs.html) or [fs-extra](https://github.com/jprichardson/node-fs-extra). You will especially appreciate it as a scripting/tooling library and for your build pipelines.
+
+## Eaton's Forked Version
+
+This fork of the underlying fs-jetpack library is accumulating a small number of additions for my projects:
+
+1. Custom serialize/deserialize plugins for read and write operations, making it easier to wrangle CSV, JSONLD, YAML, and other formats with minimal overhead. This functionality is available as a pull request to the underlying FSJetpack library for those who are interested.
+2. Downloading remote URLs to a local file in a single operation. This one is a little less interesting for most folks, but it's super handy for a few of my projects. It's unlikely to be submitted as a PR.
 
 # Table of Contents
 
