@@ -1,7 +1,7 @@
 {
-  "name": "fs-jetpack",
-  "description": "Better file system API",
-  "version": "5.1.0",
+  "name": "@eatonfyi/fs-jetpack",
+  "description": "A fork of fs-jetpack, with pluggable file serializers.",
+  "version": "5.2.0-rc.1",
   "author": "Jakub Szwacz <jakub@szwacz.com>",
   "dependencies": {
     "minimatch": "^5.1.0"
@@ -36,14 +36,20 @@
     "types.d.ts"
   ],
   "types": "index.d.ts",
-  "homepage": "https://github.com/szwacz/fs-jetpack",
+  "homepage": "https://github.com/eaton/fs-jetpack",
   "repository": {
     "type": "git",
-    "url": "https://github.com/szwacz/fs-jetpack.git"
+    "url": "git+https://github.com/eaton/fs-jetpack.git"
   },
   "license": "MIT",
   "keywords": [
     "fs",
     "file system"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/eaton/fs-jetpack/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  }
 }
