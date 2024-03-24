@@ -226,7 +226,7 @@ export interface FSJetpack {
    * @param path filename to save URL data
    * @param url url to download
    */
-  downloadAsync(path: string, url: string | URL | Request): Promise<void>
+  downloadAsync(path: string, url: string | URL | Request): Promise<void>;
 
   /**
    * Checks whether something exists on given `path`. This method returns values more specific than `true/false` to
