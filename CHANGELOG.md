@@ -1,3 +1,8 @@
+# 5.2.0-rc.1 (2024-03-24)
+- First release of eaton's forked version. Will follow the pattern of mirroring core fs-jetpack release numbering, with eaton's additions being tucked into RC releases. Ugly but a decent way to keep in sync with the underlying library for now.
+- `setSerializer`, `deleteSerializer`, and `listSerializers` on the jetpack wrapper. Serializers can be used when writing and reading files by setting the format to 'auto' instead of 'json', 'utf8', etc.
+- `downloadAsync(file, url)` added to make quick fetching of remote files easier.
+
 # 5.1.0 (2022-10-24)
 - `filter` function of `find()` method now receives also `absolutePath` property of each file
 
